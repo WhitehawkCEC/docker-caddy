@@ -1,11 +1,11 @@
 FROM caddy:2.11-builder AS builder
 
 RUN xcaddy build \
-    --with github.com/mholt/caddy-dynamicdns@f375a7248e67cf3e82b4f61f841424adb4ee958f \
-    --with github.com/caddy-dns/cloudflare@89f16b99c18ef49c8bb470a82f895bce01cbaece \
-    --with github.com/caddy-dns/duckdns@v0.4.0 \
-    --with github.com/caddy-dns/route53@v1.3.3 \
-    --with github.com/ss098/certmagic-s3@62a3ac98984dae7208ba2c126ecf6b0bf638dfa6
+    --with github.com/mholt/caddy-dynamicdns@1af4f88765982db86ce091eeb075cfb2d9348dc8 \
+    --with github.com/caddy-dns/cloudflare@6dc1fbb7e925b0da6736780db2e90f4816b79ab7 \
+    --with github.com/caddy-dns/duckdns@v0.5.0 \
+    --with github.com/caddy-dns/route53@v1.6.0 \
+    --with github.com/ss098/certmagic-s3@8af482af5f392bcd01b5f3e72653dc24e0b96012
 
 FROM caddy:2.11
 
